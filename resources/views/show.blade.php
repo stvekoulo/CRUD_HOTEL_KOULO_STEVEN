@@ -1,15 +1,15 @@
 @extends('layouts.layout')
 
 @section('content')
-    <div class="container" style="margin: 20px 0 0">
+    <div class="container" style="margin: 20px 0 0;">
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <div class="card">
-                    <div class="card-header">
-                        <h3>Détails {{$room->room_name }} </h3>
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0">Détails {{ $room->room_name }} </h3>
                     </div>
                     <div class="card-body">
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-6">
                                 <strong>Nom de l'hôtel:</strong> {{ $room->hotel_name }}
                             </div>
@@ -18,7 +18,7 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-6">
                                 <strong>Prix:</strong> {{ $room->price }}
                             </div>
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-6">
                                 <strong>Max d'adultes:</strong> {{ $room->max_adults }}
                             </div>
@@ -36,13 +36,13 @@
                             </div>
                         </div>
                         <hr>
-                        <div>
+                        <div class="mb-3">
                             <strong>Description:</strong> {{ $room->description }}
                         </div>
                         <!-- Ajoutez d'autres informations de la chambre ici -->
                     </div>
-                    <div class="card-footer">
-                        <a href="{{ route('rooms.index') }}" class="btn btn-primary">Retour</a>
+                    <div class="card-footer text-center">
+                        <a href="{{ route('rooms.index') }}" class="btn btn-secondary">Retour</a>
                     </div>
                 </div>
             </div>

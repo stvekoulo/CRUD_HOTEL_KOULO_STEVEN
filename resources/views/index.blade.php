@@ -10,10 +10,10 @@
     <div class="table-title">
       <div class="row">
         <div class="col-sm-6">
-          <h2>CRUD <b>Chambres</b></h2>
+          <h2>CRUD <b> Hotels Détails</b></h2>
         </div>
         <div class="col-sm-6">
-          <a href="{{ route('rooms.create') }}" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Ajouter une chambre</span></a>
+          <a href="{{ route('rooms.create') }}" class="btn btn-danger"><i class="material-icons">&#xE147;</i> <span>Ajouter une chambre</span></a>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@
                 <a href="{{ route('rooms.show', $room) }}" class="btn  btn-sm"><i class="fas fa-eye" data-toggle="tooltip" title="Show"></i></a>
             </div>
         </td>
-        
+
         </tr>
         @endforeach
       </tbody>
