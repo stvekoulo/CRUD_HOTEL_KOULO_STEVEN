@@ -7,7 +7,7 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-
+            <p style="color: white;">Accéder à : crud_hotel_koulo_steven.test/rooms</p>
         </div>
     </div>
 </x-app-layout>
